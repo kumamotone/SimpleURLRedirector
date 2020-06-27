@@ -1,0 +1,36 @@
+<head>
+    <script defer src="options.js"></script>
+    <script defer src="all.js"></script>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./pure-min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>
+            Simple URL Redirector
+        </h1>
+        <form id="my-form" class="pure-form">
+            <legend>Add Settings</legend>
+            <fieldset>
+                <div class="pure-control-group">
+                <label for="redirect-from">From:</label>
+                <input id="redirect-from-0" class="pure-input-1-4" type="text" placeholder="e.g. https://twitter.com/">
+                <label for="redirect-to">To:</label>
+                <input id="redirect-to-0" class="pure-input-1-4" type="text" placeholder="e.g. https://tweetdeck.twitter.com/">
+                <!-- TODO:
+                <label for="remember">
+                    <input id="remember" type="checkbox"> enabled
+                </label>
+                -->
+                </div>
+                <div class="pure-controls">
+                    <button type="submit" class="pure-button pure-button-primary">
+                        <i class="fas fa-save"></i>
+                        Save
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+        Tip: Doesn't work? Try checking your URL at this extension's popup in Chrome toolbar.
+    </div>
+</body>
